@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.min.js"></script>
+  <script src="coffee-script.js"></script>
+  <script src="tog.coffee" type="text/coffeescript"></script>
+  <link rel="stylesheet" href="tog.css"></link>
+</head>
+<body>
+  <div>
+    <h1>Keyboard versus mouse online</h1>
+  </div>
+  <div>
+    <div>
+      <h2>The Tog test</h2>
+      <p>
+        In 1989, Bruce "Tog" Tognazzini described results of
+        <a href="http://www.asktog.com/TOI/toi06KeyboardVMouse1.html">Apple Computer's research</a>
+        into mouse efficiency:
+        <blockquote cite="http://www.asktog.com/TOI/toi06KeyboardVMouse1.html">
+          We discovered, among other things, two pertinent facts:
+          <ul>
+            <li>The stopwatch consistently proves mousing is faster than keyboarding.</li>
+            <li>Test subjects consistently report that keyboarding is faster than mousing.</li>
+          </ul>
+        </blockquote>
+      </p>
+      <p>
+        Keyboard zealots rebelled so strongly against this conclusion that Tog felt compelled to
+        publish two follow-up articles, in which he described a specific test:
+        <blockquote cite="http://www.asktog.com/SunWorldColumns/S02KeyboardVMouse3.html">
+          Using Microsoft Word on a Macintosh, I typed in a paragraph of text, then replaced every
+          instance of an "e" with a vertical bar (|). The test subject's task was to replace every |
+          with an "e." Just to make it even harder, the test subjects, when using the mouse, were
+          forbidden to just drop the cursor to the right of the | and then use the delete key to get
+          rid of it. Instead, they had to actually drag the mouse pointer across the one-pixel width
+          of the character to select it, then press the "e" key to replace it
+        </blockquote>
+      </p>
+      <p>
+        This page lets you test yourself.
+      </p>
+      <form>
+        <fieldset><legend>Font size</legend>
+          <label>
+            <input type="radio" name="size" value="16px" checked="checked"> Normal
+          </label>
+          <label>
+            <input type="radio" name="size" value="24px"> Large
+          </label>
+        </fieldset>
+        <fieldset><legend>Font family</legend>
+          <label>
+            <input type="radio" name="family" value="serif" checked="checked"> Proportional
+          </label>
+          <label>
+            <input type="radio" name="family" value="monospace"> Monospace
+          </label>
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      <div class="mouse">
+        <h2>Mouse only</h2>
+        <div class="test">
+          <textarea disabled="disabled" spellcheck="false"></textarea>
+          <button class="start">
+            <p>Replace pipes with e</p>
+            <p>The first is selected now</p>
+            <p>No cursor keys work</p>
+            <br>
+            <p>Click when ready</p>
+          </button>
+          <div class="status">
+            <div>
+              <span class="progress"></span> remain
+            </div>
+            <div class="progress-bar"><div></div></div>
+            <div class="countdown"></div>
+          </div>
+          <div class="results">
+            <h2>Complete</h2>
+            <table>
+              <tr><th>Pipes:</th><td class="pipes">TBD</td></tr>
+              <tr><th>Time:</th><td class="time">TBD</td></tr>
+              <tr><th>Errors:</th><td class="errors">TBD</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="keyboard">
+        <h2>Keyboard only</h2>
+        <div class="test">
+          <textarea disabled="disabled" spellcheck="false"></textarea>
+          <button class="start">
+            <p>Replace pipes with e</p>
+            <p>The first is selected now</p>
+            <p>Your mouse is hidden</p>
+            <br>
+            <p>Click when ready</p>
+          </button>
+          <div class="status">
+            <div>
+              <span class="progress"></span> remain
+            </div>
+            <div class="progress-bar"><div></div></div>
+            <div class="countdown"></div>
+          </div>
+          <div class="results">
+            <h2>Complete</h2>
+            <table>
+              <tr><th>Pipes:</th><td class="pipes">TBD</td></tr>
+              <tr><th>Time:</th><td class="time">TBD</td></tr>
+              <tr><th>Errors:</th><td class="errors">TBD</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p>By Josiah Ulfers, 2012. Text from <a href="http://baconipsum.com/">Bacon ipsum</a>.</p>
+    <p>Public domain or the closest thing to it.
+      <a href="https://bitbucket.org/togonline/togonline.bitbucket.org">Clone on Bitbucket</a>.</p>
+  </div>
+</body>
+</html>

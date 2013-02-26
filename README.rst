@@ -2,7 +2,7 @@ Tog test online
 ===============
 
 Tog test online is a simple self test of Bruce Tognazzini's findings about a mouse being faster than
-a keyboard. Try it out at http://togonline.bitbucket.org/.
+a keyboard. Try it out at http://togonline.joeulfers.com/.
 
 Getting started
 ---------------
